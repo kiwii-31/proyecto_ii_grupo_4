@@ -1,0 +1,129 @@
+INSERT INTO pelicula (nombre, clasificacion, reparto_ID, sala_ID, genero_ID)
+VALUES ('enredados', 'muy buena', 1, 1, 2),
+    ('up', 'infantil', 2, 2, 1),
+    ('avengers', 'accion', 3, 3, 3),
+    ('frozen', 'infantil', 4, 4, 2),
+    ('inception', 'suspenso', 5, 5, 3);
+
+INSERT INTO `cine`.`genero` (`id_genero`, `tipos_de_genero`)
+VALUES (1, 'comedia'),
+    (2, 'aventura'),
+    (3, 'accion'),
+    (4, 'drama'),
+    (5, 'fantasia');
+
+INSERT INTO `cine`.`actor` (`id_actor`, `nombre`, `fecha_de_nacimiento`)
+VALUES (1, 'maria julieta', '1990-09-02'),
+    (2, 'juan perez', '1985-07-15'),
+    (3, 'ana gomez', '1992-03-23'),
+    (4, 'luis fernando', '1988-01-10'),
+    (5, 'sofia lopez', '2000-11-11');
+
+INSERT INTO `cine`.`personaje` (`id_personaje`, `nombre`, `actor_ID`, `rol`)
+VALUES (1, 'rapunsel', 1, 'protagonista'),
+    (2, 'prince', 2, 'co-protagonista'),
+    (3, 'villain', 3, 'antagonista'),
+    (4, 'sidekick', 4, 'secundario'),
+    (5, 'mentor', 5, 'secundario');
+
+INSERT INTO `cine`.`reparto` (`id_reparto`, `detalle`, `personaje_ID`)
+VALUES (1, 'ggg', 1),
+    (2, 'hhh', 2),
+    (3, 'iii', 3),
+    (4, 'jjj', 4),
+    (5, 'kkk', 5);
+
+INSERT INTO `cine`.`cine` (`id_cine`, `nombre`, `direccion`, `telefono`)
+VALUES (1, 'atlas flores', 'flore123', '1234567890'),
+    (2, 'cinemex centro', 'avenida 123', '0987654321'),
+    (3, 'cinepolis norte', 'calle 456', '1122334455'),
+    (4, 'cine magic', 'boulevard 789', '5566778899'),
+    (5, 'cinema luna', 'carretera 321', '6677889900');
+
+INSERT INTO `cine`.`programa` (`id_programa`, `inicio_programa`, `fin_programa`, `ID_cine`)
+VALUES (1, '2024-02-09 11:00:00', '2024-02-16 23:00:00', 1),
+    (2, '2024-02-10 10:00:00', '2024-02-17 22:00:00', 2),
+    (3, '2024-02-11 09:00:00', '2024-02-18 21:00:00', 3),
+    (4, '2024-02-12 08:00:00', '2024-02-19 20:00:00', 4),
+    (5, '2024-02-13 07:00:00', '2024-02-20 19:00:00', 5);
+
+INSERT INTO `cine`.`funcion` (`id_funcion`, `tipo_funcion`, `restriccion_edad`, `cronograma_ID`)
+VALUES (1, 'estreno', 'mayor de 8', 1),
+    (2, 'normal', 'mayor de 12', 2),
+    (3, 'estreno', 'mayor de 15', 3),
+    (4, 'especial', 'todas las edades', 4),
+    (5, 'matiné', 'todas las edades', 5);
+
+INSERT INTO `cine`.`cliente` (`id_cliente`, `nombre`, `sexo`, `telefono`, `fecha_nacimiento`)
+VALUES (1, 'pablo escobar', 'M', '123456789', '1980-06-25'),
+    (2, 'julia martinez', 'F', '987654321', '1990-05-20'),
+    (3, 'carlos ruiz', 'M', '456123789', '1975-09-10'),
+    (4, 'mariana diaz', 'F', '321456987', '2000-03-15'),
+    (5, 'roberto lopez', 'M', '852741963', '1985-11-30');
+
+INSERT INTO `cine`.`orden_de_compra` (`id_compra`, `precio`, `cliente_ID`, `fecha_compra`)
+VALUES (1, 4.500, 1, '2024-02-10 13:30:45'),
+    (2, 7.000, 2, '2024-02-11 14:00:00'),
+    (3, 5.500, 3, '2024-02-12 15:15:30'),
+    (4, 8.000, 4, '2024-02-13 16:45:00'),
+    (5, 6.200, 5, '2024-02-14 17:30:00');
+
+INSERT INTO `cine`.`entrada` (`id_entrada`, `tipo_de_entrada`, `compra_ID`, `peli_ID`)
+VALUES (1, 'mayor', 1, 2),
+    (2, 'mayor', 2, 3),
+    (3, 'menor', 3, 4),
+    (4, 'mayor', 4, 5),
+    (5, 'mayor', 5, 6);
+
+INSERT INTO `cine`.`sala` (`id_sala`, `butaca`, `cine_ID`, `funcion_ID`)
+VALUES (1, '30', 1, 1),
+    (2, '50', 2, 2),
+    (3, '40', 3, 3),
+    (4, '60', 4, 4),
+    (5, '70', 5, 5);
+
+
+
+("INSERT INTO pelicula (nombre, imagen) VALUES (?, ?)")
+("UPDATE pelicula SET nombre = ?, reparto_ID = ? WHERE id = ?")
+("SELECT imagen FROM pelicula WHERE id = ?")
+("UPDATE pelicula SET imagen = ? WHERE id = ?")
+("SELECT * FROM pelicula")
+
+-- Esta consulta me permite buscar el nombrer de la pelicula con su genero respectivo
+SELECT pelicula.nombre,genero.tipos_de_genero
+FROM genero
+INNER JOIN pelicula
+ON
+pelicula.genero_ID = genero.id_genero
+WHERE pelicula.nombre = ? ;
+
+-- esta consulta le permitira al administrador cambiar la pelicula cuando sea necesario
+UPDATE pelicula SET nombre = ? , clasificacion= ? , genero_ID = ? WHERE id_peli = ? ;
+
+-- cuando selecciones el genero que deseas ver, te apareceran todas las peliculas con ese genero
+SELECT genero.tipos_de_genero,pelicula.nombre
+FROM genero
+INNER JOIN pelicula
+ON pelicula.genero_ID = genero.id_genero
+WHERE tipos_de_genero = ?;
+
+-- Esta consulta realiza una compra, primero se guarda una nueva orden
+-- luego se guarda el ultimo id que se inserto para despues insertar
+-- una nueva entrada en la su respectiva tabla para la orden antes hecha  
+INSERT INTO orden_de_compra (precio, cliente_ID, fecha_compra)
+VALUES (5000, 1, NOW());
+SET @ultimo_compra_ID = LAST_INSERT_ID();
+INSERT INTO entrada (tipo_de_entrada, compra_ID, peli_ID)
+VALUES ('mayor', @ultimo_compra_ID, 2);
+
+
+-- Esta consulta le permite ver al usuario que peliculas hay en cada tipo de funcion
+SELECT funcion.tipo_funcion AS tipo_de_funcion,
+       GROUP_CONCAT(pelicula.nombre ORDER BY pelicula.nombre SEPARATOR ', ') AS peliculas
+FROM pelicula
+JOIN sala ON pelicula.sala_ID = sala.id_sala
+JOIN funcion ON sala.funcion_ID = funcion.id_funcion
+WHERE funcion.tipo_funcion = 'estreno'
+GROUP BY funcion.tipo_funcion
+ORDER BY funcion.tipo_funcion;

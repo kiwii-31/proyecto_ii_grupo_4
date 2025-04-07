@@ -15,4 +15,3 @@ Este repositorio contiene la documentación y archivos al proyecto elegido y rea
 
 - Entrevista al PO (realizada por otro grupo)
 - Historias de usuario (creadas por el grupo que entrevistó a nuestro PO)
-- Documentación propia generada en clase

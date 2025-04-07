@@ -1,0 +1,1 @@
+Se le recomienda a nuestro grupo de trabajo crear un programa que administre las ventas y reservas de un complejo de cine. El responsable de liderar este grupo de trabajo es Estiven Flores y como programadores tenemos a Laura Martinez y Ezequeil Toriaci cada uno con un conocimiento basto en Base de datos.🦆🦆documentacion del proyecto 2024 cine

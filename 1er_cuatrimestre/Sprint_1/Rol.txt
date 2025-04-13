@@ -1,1 +1,32 @@
-jj
+Roles de los miembros 
+
+Elmer Estiven Flores: Administrador del Proyecto, Programador, ingeniero de manutención.
+Ana Laura Martinez Rodas: Analista, diseñadora, programador, documentador.
+Andrew Jair Talavera : diseñador (ayudante).
+Leandro Vilchez: programador(ayudante).
+Ezequiel Cristián Toriaci: Analista, Tester,programador, documentador.
+
+El motivo del porqué elegimos ciertos roles:
+
+Elmer:
+Administrador del Proyecto: Tiene experiencia y sabe liderar al grupo
+Programador: Soy el que más destaca del grupo en ese rol además tengo experiencia previa en idiomas que usaremos para el proyecto
+ingeniero de manutención:Se lleva el ambiente laboral haciendo que mi equipo se sienta bien y no haya problemas, como soy uno de los programadores puede pensar el cómo hacer el código más eficiente y con algunas otras tareas.
+
+Laura:
+Analista: Tengo buena capacidad de escucha, soy creativa, tengo conocimiento en diseño y lenguajes de programación, además de tener experiencia
+diseñador: soy creativa, tengo conocimientos en diseño y programación además me gusta pensar como se verá y funcionará el programa 
+Programador: ya poseo conocimientos con distintos lenguaje de programación que usaremos en este proyecto 
+documentador: ya me había encargado de organizar la documentación desde manuales, los procesos hasta la fase final del proyecto 
+
+Ezequiel:
+Analista: Ya había ejercido este rol en proyectos anteriores, poseyendo experiencia y una mente bien entrenada
+tester: poseo bastante conocimiento en diversos lenguajes de programación, tengo experiencia en el desarrollo de sistemas, creatividad y soy simpatico con mis compañeros de grupo
+programador: Ya tengo conocimiento al momento de programar, entiendo distintos lenguajes, se como trasladar diagramas o pseudocódigo a puras lineas de código.
+documentador: Anteriormente ya me he encargado de esta tarea, teniendo experiencia al momento de estructurar un documento, teniendo buena comunicación con todos los integrantes del equipo.
+
+Leandro:
+programador (ayudante):Al preguntarle no sabía qué rol meterse así que el grupo decidió darle ese rol por un tiempo 
+
+Andrew:
+Diseñador (ayudante):Al preguntarle no sabía qué rol metería así que el grupo decidió darle ese rol por un tiempo.

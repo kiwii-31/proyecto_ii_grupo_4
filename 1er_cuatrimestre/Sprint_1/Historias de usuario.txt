@@ -1,1 +1,7 @@
-historias de usuario
+Historias de usuario que hizo el grupo 3 de la entrevista 
+
+Como cliente quiero tener acceso a una página web para la compra y venta de entradas Para poder adquirir boletos de cine fácilmente
+
+Como administrador quiero desarrollar el programa con Python, Css, Html y MySql para Asegurar que el programa sea eficiente y funcional
+
+Como administrador quiero actualizar y mantener la página web para su correcto funcionamiento y seguridad

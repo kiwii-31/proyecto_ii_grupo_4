@@ -1,1 +1,21 @@
-Entrevista
+Entrevista del grupo 3 hacia el grupo 4
+
+¿Cuál es el objetivo del programa? 
+Una página web para un cine simple con una visualización amigable para el usuario donde pueda comprar entradas. Con funcionalidad de pago online 
+
+¿Con qué lo van a desarrollar? 
+El proyecto se va a desarrollar con python, css y html
+Para la base de datos: mysql 
+
+¿Cómo son sus reglas de negocio? 
+Administrador: quien actualiza y mantiene la página web 
+Usuario: quien accede a la página para comprar entradas.
+
+¿Con qué programas van a llevar a cabo la documentación y la planificación?
+Solamente con word
+
+ ¿Qué tiene de diferente tu página frente a las demás? 
+Nada por el momento. 
+
+¿Usaron referencias? ¿Cuáles?
+El código de  la página web fue modificado a partir de otro código, cambiando imágenes, partes del código, entre otros.

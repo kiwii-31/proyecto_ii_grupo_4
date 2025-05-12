@@ -1,0 +1,93 @@
+¿De qué trata la página web o aplicación?
+
+La página web es una guía informativa de celulares. Ofrece reseñas, opiniones, precios aproximados, características técnicas y accesorios de distintos modelos de celulares. El sitio no está pensado para vender productos, solo para brindar información clara y útil al usuario antes de tomar una decisión de compra.
+
+
+
+¿Qué recursos y herramientas tienen pensado utilizar para gestionar los datos?
+
+Utilizaremos el lenguaje Python para la lógica del sistema y MySQL para gestionar la base de datos. Además, podríamos usar frameworks como Flask o Django para el desarrollo web, y herramientas como PHPMyAdmin  para manejar los datos de forma más eficiente.
+
+
+¿Cómo van a estructurar las reseñas?
+
+Las reseñas estarán organizadas en fichas para cada celular, incluyendo:
+
+Nombre del modelo
+
+Marca
+
+Año de lanzamiento
+
+Especificaciones técnicas (procesador, cámara, batería, pantalla, etc.)
+
+Precio estimado
+
+Opiniones de usuarios
+
+Puntaje general
+
+Pros y contras
+
+
+
+
+¿Qué funcionalidades principales tendrá su página web/aplicación?
+
+Ver información completa de celulares por marca o categoría
+
+Comparar modelos entre sí
+
+Leer y dejar opiniones
+
+Filtrar celulares por características (precio, cámara, batería, etc.)
+
+Acceso desde cualquier dispositivo (PC, tablet o celular)
+
+Registro de usuarios para guardar favoritos o dejar reseñas
+
+
+
+
+¿Qué medidas tomarán para evitar reseñas falsas?
+
+Solo los usuarios registrados podrán dejar reseñas
+
+Cada reseña pasará por una revisión automática 
+
+No se permitirán comentarios ofensivod 
+
+Se podrán reportar reseñas sospechosas
+
+Se limitará la cantidad de reseñas por usuario en un mismo producto
+
+
+
+¿Cómo planean hacer la página para que funcione desde dispositivos móviles?
+
+Vamos a utilizar diseño web responsive, lo que significa que la página se adaptará automáticamente al tamaño de la pantalla del dispositivo. Usaremos herramientas como HTML5, CSS3 y frameworks como Bootstrap para asegurarnos de que la web sea cómoda y funcional desde celulares y tablets.
+
+
+
+¿Cómo planean organizar la información para que sea fácil de leer y comparar? (Parte del Diseño)
+
+La información estará dividida en secciones claras dentro de cada ficha de producto.
+Tendremos:
+
+Tablas para comparar modelos
+
+Filtros para buscar celulares según características específicas
+
+Un diseño limpio
+
+
+
+
+¿Por qué quieren hacer esta idea?
+
+Queremos ayudar a las personas a ahorrar tiempo al buscar un celular. Muchas veces hay demasiada información en diferentes sitios, y nuestra idea es reunir todo en un solo lugar, de forma clara, ordenada y sin necesidad de comprar.
+
+
+¿Qué va a tener de diferente esta aplicación de reseñas en comparación con otras páginas?
+
+Nuestra página no vende celulares. A diferencia de sitios como Mercado Libre, donde la información depende de cada vendedor, aquí todos los productos tendrán fichas completas, organizadas y confiables. Nuestro foco está en brindar información objetiva y detallada para que los usuarios tomen buenas decisiones sin distracciones.

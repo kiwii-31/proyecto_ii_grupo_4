@@ -10,8 +10,3 @@ Este repositorio contiene la documentación y archivos al proyecto elegido y rea
 - Ezequiel Toriaci 
 - Andrew Talavera
 - Leandro Vilchez 
-
-## Actividades echas actuales
-
-- Entrevista al PO (realizada por otro grupo)
-- Historias de usuario (creadas por el grupo que entrevistó a nuestro PO)

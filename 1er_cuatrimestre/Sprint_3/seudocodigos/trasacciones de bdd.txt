@@ -1,0 +1,13 @@
+1er ejercicio
+sqlite> insert into empleados (nombre,rol) values ('tato','programador');  
+sqlite> savepoint<hola>; 
+Error: in prepare, near "<": syntax error (1)
+sqlite> savepoint hola; 
+sqlite> insert into empleados (nombre,rol) values ('tato',4545645);  
+Error: stepping, UNIQUE constraint failed: empleados.nombre (19)
+sqlite> insert into empleados (nombre,rol) values ('poyo',4545645);  
+sqlite> rollback to;
+Error: in prepare, near ";": syntax error (1)
+sqlite> rollback to hola;
+
+2do ejercicio

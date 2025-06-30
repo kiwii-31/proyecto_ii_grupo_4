@@ -1,0 +1,61 @@
+Pseudocodigo general sobre todas las funciones
+
+Inicio del sistema
+
+Mostrar mensaje: "¿Ya tiene una cuenta?"
+
+Si el usuario responde que sí
+    Pedir nombre de usuario y contraseña
+
+    Mientras los datos sean incorrectos
+        Mostrar mensaje: "Datos incorrectos. Intente nuevamente"
+        Volver a pedir los datos
+
+    Cuando los datos son correctos
+        Mostrar mensaje: "Ingreso exitoso"
+        Continuar al sistema
+
+Si el usuario responde que no
+    Pedir:
+        - Nombre
+        - Correo
+        - Contraseña
+        - Teléfono
+        - Fecha de nacimiento
+        - Sexo
+
+    Validar los datos en la base de datos
+    Enviar código de verificación al correo
+    Iniciar cronómetro para expiración
+
+    Si el código es ingresado antes del vencimiento
+        Mostrar mensaje: "Cuenta creada con éxito"
+        Continuar al sistema
+
+    Si el código expira
+        Mostrar mensaje: "El código expiró"
+        Enviar nuevo código
+        Repetir el proceso
+
+Una vez ingresado al sistema:
+    Mostrar cartelera de películas
+
+    Si el usuario selecciona una película
+        Mostrar opciones:
+            1. Comprar entrada
+            2. Alquilar película
+            3. Salir
+
+        Si elige "Comprar entrada"
+            [acá va todo el seudocódigo que ya hiciste para comprar]
+
+        Si elige "Alquilar película"
+            [acá va todo el seudocódigo que ya hiciste para alquilar]
+
+        Si elige "Salir"
+            Volver a cartelera o cerrar sesión
+
+Fin del sistema
+
+
+

@@ -47,13 +47,13 @@ Una vez ingresado al sistema:
             3. Salir
 
         Si elige "Comprar entrada"
-            [acá va todo el seudocódigo que ya hiciste para comprar]
+            [acá va la funionalidad de comprar entrada]
 
         Si elige "Alquilar película"
-            [acá va todo el seudocódigo que ya hiciste para alquilar]
+            [acá va la funcionanlidad de alquiler]
 
         Si elige "Salir"
-            Volver a cartelera o cerrar sesión
+            Volver a cartelera 
 
 Fin del sistema
 

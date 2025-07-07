@@ -1,0 +1,46 @@
+Metodo de alquiler
+
+Inicio del sistema
+
+si el usuario selecciona una pelicula
+se mostrara tres opciones debajo de los datos de la peli
+
+1-comprar entrada
+2-alquilar pelicula
+3-salir
+
+si el usuario elige alquilar pelicula
+se le mostrara el precio junto al tiempo que tendra la peli
+luego debera elegir las siguientes medios de pago
+
+-debito
+-credito
+-volver
+
+
+si el usuario elige la opcion de volver
+se le llevara al momento de elegir su metodo de pago
+
+
+si elige debito o credito debe ingresar estos datos
+
+-N* de tarjeta
+-fecha de vencimiento
+- codigo de seguridad
+
+si el usuario ingresa de manera incorrecta los datos
+se mostrara un mesnajen indicando que lo vuelva a hacer hasta que sean validos
+
+
+
+si el usaurio ingresa los datos de manera correcta
+estos se guardaran en la base de datos
+se mostrara un mensaje de exito y lo lleva al inicio
+
+
+si el usuario elige la opcion de SALIR
+lo llevara a la cartelera nuevamente
+
+muestra un mensaje de exito y se le redirige a la pagina principal
+
+fin del programa

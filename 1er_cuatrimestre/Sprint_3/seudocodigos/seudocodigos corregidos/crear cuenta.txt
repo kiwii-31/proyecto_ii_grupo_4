@@ -1,0 +1,24 @@
+Crear cuenta
+
+Inicio del sistema
+
+se pregunta al usuario si tiene una cuenta
+Si el usuario responde que no
+    Se le manda a que cree una cuenta nueva ingresando:
+        - Nombre
+        - Correo electrónico
+        - Contraseña
+        - Teléfono
+        - Fecha de nacimiento
+	- sexo
+    estos datos se validan en la bdd
+   se envia un codigo para verifiar al correo proporcionado
+   se activa un cronometro donde el codigo espira
+
+Si el codigo es ingresado antes de que espire
+muestra un mensaje indicando que fue creada con exito redirijiendolo al inicio
+
+si el codigo no es ingresado en tiempo
+se mostrara un mensaje indicando que ya espiro, dando otro codigo hasta que se logre
+
+Fin del sistema

@@ -1,0 +1,23 @@
+Sistema iniciado
+
+Recibe datos de la película y la butaca elegida
+
+Verifica disponibilidad de butacas
+
+Si no hay butacas disponibles
+    Envía aviso al cliente
+
+Si hay butacas disponibles
+    Envía precio al cliente
+
+Recibe método de pago y datos de la tarjeta
+
+Verifica validez de los datos de pago
+
+Si los datos son incorrectos
+    Envía mensaje de error al cliente
+
+Si los datos son correctos
+    Guarda la compra en la base de datos
+    Genera ticket/comprobante
+    Envía confirmación al cliente

@@ -1,0 +1,27 @@
+servidor -crear cuenta-
+
+iniciar sistema
+
+Recibe los datos de registro del cliente
+
+Valida los datos en la base de datos
+
+    Si los datos son inválidos o ya existen
+        Envía mensaje al cliente: "Error en los datos" o "Correo ya registrado"
+    Si los datos son válidos
+        Guarda los datos en la base
+        Genera un código de verificación
+        Envía el código al correo del cliente
+        Envía mensaje al cliente: "Código enviado, vence en 2 minutos"
+
+Activa temporizador de expiración del código
+
+Cuando el cliente envía el código:
+    Si el código está expirado
+        Envía mensaje: "Código expirado, se ha enviado uno nuevo"
+        Genera nuevo código y lo envía
+    Si el código es correcto y dentro del tiempo
+        Marca la cuenta como verificada
+        Envía mensaje: "Cuenta creada exitosamente"
+
+

@@ -1,0 +1,72 @@
+Pseudocodigo de compra  
+	
+inicio del sistema
+
+// Bloque 1
+se muestra la cartelera del cine
+
+// Bloque 2
+si el usuario selecciona una pelicula
+se mostrara tres opciones debajo de los datos de la peli
+
+1-comprar entrada
+2-alquilar pelicula
+3-salir
+
+// Bloque 3
+si el usuario elegi la opcion comprar entrada
+pedira que eliga los siguientes datos:
+
+-tipo de sala (2D,3D,4D,5D)
+-fecha
+-horario
+-butaca
+
+// Bloque 4
+si no hay butacas disponibles
+muestra un mensaje de aviso y se lo manda al bloque 3
+
+si hay butacas disponibles
+se le mostrara el precio segun sus elecciones
+
+// Bloque 5
+luego se le pedira que seleccione un metodo de pago
+
+-debito
+-credito
+-volver
+
+si el usuario elige la opcion de volver
+se le llevara al momento de elegir un metodo de pago
+
+// Bloque 6
+si el usuario elige debito o credito
+se le mostrara un mensaje pidiendo que ingrese estos datos
+
+-N* tarjeta
+-fecha vencimiento
+-codigo de seguridad
+
+// Bloque 7
+si el usuario ingresa de manera incorrecta los datos
+se mostrara un mensaje indicando que lo vuelva a hacer hasta que sean validos
+
+// Bloque 8
+si los datos ingresados son correctos
+enviar los datos al servidor para procesar la compra
+
+esperar respuesta del servidor
+
+// Bloque 9
+si la respuesta es éxito
+se genera un ticket/comprobante que los valide
+muestra un mensaje de exito y se le redirige a la pagina principal
+
+si la respuesta es error
+mostrar mensaje de error y permitir reintentar
+
+// Bloque 10
+si el usuario elige la opcion de SALIR
+lo llevara a la cartelera nuevamente
+
+Fin del sistema

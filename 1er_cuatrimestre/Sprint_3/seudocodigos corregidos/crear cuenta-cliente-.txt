@@ -1,0 +1,52 @@
+Inicio del sistema
+
+// Bloque 1
+se pregunta al usuario si tiene una cuenta
+
+// Bloque 2
+Si el usuario responde que no
+    Se le manda a que cree una cuenta nueva ingresando:
+        - Nombre
+        - Correo electrónico
+        - Contraseña
+        - Teléfono
+        - Fecha de nacimiento
+        - sexo
+
+    enviar los datos al servidor
+
+// Bloque 3
+esperar validacion de los datos del servidor
+
+si los datos devueltos son inválidos
+    se le pedira que lo vuelva a intentar (volver a Bloque 2)
+
+si los datos son válidos
+    continuar al siguiente bloque
+
+// Bloque 4
+esperar respuesta del servidor si existe la cuenta
+
+si la cuenta ya existe
+    se mostrará un mensaje indicando que esa cuenta ya existe
+    se le pedirá crear con otros datos o iniciar sesión
+
+si la cuenta no existe
+    continuar al siguiente bloque
+
+// Bloque 5
+esperar respuesta del servidor con gmail de verificación
+
+si se recibe el gmail de verificación
+    activar cronómetro de expiración
+
+// Bloque 6
+Si el gmail es aceptado antes de que expire
+    muestra un mensaje indicando que fue creada con éxito
+    redirigir al inicio
+
+si el gmail no es ingresado en tiempo
+    mostrar un mensaje indicando que ya expiró
+    solicitar nuevo gmail (volver a Bloque 5)
+
+Fin del sistema

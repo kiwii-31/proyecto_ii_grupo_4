@@ -1,0 +1,27 @@
+Inicio del sistema
+// Bloque 1
+se pregunta si el usurio ya tiene una cuenta
+
+// Bloque 2
+Si el usuario responde que sí
+    Se le pide que ingrese:
+        - nombre
+        - contraseña
+
+    enviar los datos al servidor
+
+// Bloque 3
+esperar respuesta del servidor
+
+// Bloque 4
+Si los datos son correctos
+    Se le da acceso a su cuenta
+
+Si los datos no son correctos
+    Se muestra un mensaje indicando que los datos no son los correctos
+    se le pide que lo vuelva a ingresar hasta que sean validos
+
+Fin del sistema
+
+
+

@@ -1,0 +1,51 @@
+Inicio del sistema
+
+// Bloque 1
+si el usuario selecciona una pelicula
+se mostrara tres opciones debajo de los datos de la peli
+
+1-comprar entrada
+2-alquilar pelicula
+3-salir
+
+// Bloque 2
+si el usuario elige alquilar pelicula
+se le mostrara el precio junto al tiempo que tendra la peli
+luego debera elegir las siguientes medios de pago
+
+-debito
+-credito
+-volver
+
+// Bloque 3
+si el usuario elige la opcion de volver
+se le mostrar un mesnaje avisando que pago se cancelo
+despues se le llevara al momento de elegir su metodo de pago
+
+// Bloque 4
+si elige debito o credito debe ingresar estos datos
+
+-N* de tarjeta
+-fecha de vencimiento
+-codigo de seguridad
+
+// Bloque 5
+si el usuario ingresa de manera incorrecta los datos
+se mostrara un mesnajen indicando que lo vuelva a hacer hasta que sean validos
+
+// Bloque 6
+si el usaurio ingresa los datos de manera correcta
+enviar los datos al servidor
+
+esperar respuesta del servidor
+
+// Bloque 7
+si la respuesta es éxito
+se le mostrara un resumen de la compra
+despues mostrara un mensaje de exito y lo lleva al inicio
+
+// Bloque 8
+si el usuario elige la opcion de SALIR
+lo llevara a la cartelera nuevamente
+
+Fin del sistema

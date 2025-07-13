@@ -1,23 +1,23 @@
-Sistema iniciado
+Inicio del servidor
 
-Recibe datos de la película y la butaca elegida
+// Bloque 1
+recibe solicitud de inicio de compra con datos de película
 
-Verifica disponibilidad de butacas
+// Bloque 2
+envía datos de la película seleccionada al cliente
 
-Si no hay butacas disponibles
-    Envía aviso al cliente
+// Bloque 3
+recibe método de pago y datos de tarjeta
 
-Si hay butacas disponibles
-    Envía precio al cliente
+verifica que los datos de pago sean válidos
 
-Recibe método de pago y datos de la tarjeta
+si los datos son inválidos
+    enviar respuesta: pago cancelado
 
-Verifica validez de los datos de pago
+si los datos son válidos
+    registrar la compra en la base de datos
+    generar comprobante
+    enviar respuesta: pago completado con resumen de compra
 
-Si los datos son incorrectos
-    Envía mensaje de error al cliente
+Fin del servidor
 
-Si los datos son correctos
-    Guarda la compra en la base de datos
-    Genera ticket/comprobante
-    Envía confirmación al cliente

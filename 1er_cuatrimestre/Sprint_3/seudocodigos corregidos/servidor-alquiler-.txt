@@ -1,15 +1,15 @@
 inicio del servidor
 
-// Bloque 1: Recibir datos
+// Bloque 1
 recibir datos de la pelicula seleccionada y método de pago con datos de tarjeta
 
-// Bloque 2: Validar datos pago
+// Bloque 2
 verificar que los datos de la tarjeta sean correctos
 
 si los datos son incorrectos
 enviar respuesta de error al cliente
 
-// Bloque 3: Guardar alquiler
+// Bloque 3
 si los datos son correctos
 guardar alquiler en la base de datos
 enviar respuesta de éxito al cliente

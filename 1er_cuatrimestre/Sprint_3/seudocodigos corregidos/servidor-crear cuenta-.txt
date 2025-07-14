@@ -25,3 +25,56 @@ Cuando el cliente envía el código:
         Envía mensaje: "Cuenta creada exitosamente"
 
 
+Inicio del sistema
+
+// Bloque 1: Preguntar si tiene cuenta
+se pregunta al usuario si tiene una cuenta
+
+// Bloque 2: Solicitar datos para crear cuenta
+Si el usuario responde que no
+    Se le manda a que cree una cuenta nueva ingresando:
+        - Nombre
+        - Correo electrónico
+        - Contraseña
+        - Teléfono
+        - Fecha de nacimiento
+        - sexo
+
+    enviar los datos al servidor
+
+// Bloque 3: Esperar validación inicial del servidor (datos válidos o no)
+esperar validacion de los datos del servidor
+
+si los datos devueltos son inválidos
+    se le pedira que lo vuelva a intentar (volver a Bloque 2)
+
+si los datos son válidos
+    continuar al siguiente bloque
+
+// Bloque 4: Esperar respuesta si la cuenta ya existe
+esperar respuesta del servidor si existe la cuenta
+
+si la cuenta ya existe
+    se mostrará un mensaje indicando que esa cuenta ya existe
+    se le pedirá crear con otros datos o iniciar sesión
+
+si la cuenta no existe
+    continuar al siguiente bloque
+
+// Bloque 5: Esperar código de verificación
+esperar respuesta del servidor con código de verificación
+
+si se recibe el código de verificación
+    mostrar mensaje para ingresar el código
+    activar cronómetro de expiración
+
+// Bloque 6: Validar código de verificación
+Si el código es ingresado antes de que expire
+    muestra un mensaje indicando que fue creada con éxito
+    redirigir al inicio
+
+si el código no es ingresado en tiempo
+    mostrar un mensaje indicando que ya expiró
+    solicitar nuevo código (volver a Bloque 5)
+
+Fin del sistema

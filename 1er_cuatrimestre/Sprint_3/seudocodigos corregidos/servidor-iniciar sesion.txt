@@ -1,10 +1,10 @@
 Inicio del servidor
 
-// Bloque 1: Recibir datos login
+// Bloque 1
 si recibe datos de login (nombre y contraseña)
     validar los datos en la base de datos
 
-// Bloque 2: Enviar respuesta
+// Bloque 2
     si los datos son correctos
         enviar respuesta de éxito al cliente
 

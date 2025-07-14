@@ -1,16 +1,17 @@
-Inicio del Sistema
+inicio del servidor
 
-Recibe la selección del usuario (alquiler de película)
+// Bloque 1: Recibir datos
+recibir datos de la pelicula seleccionada y método de pago con datos de tarjeta
 
-Envía precio y tiempo de alquiler al cliente
+// Bloque 2: Validar datos pago
+verificar que los datos de la tarjeta sean correctos
 
-Recibe datos del método de pago y tarjeta
+si los datos son incorrectos
+enviar respuesta de error al cliente
 
-Verifica que los datos sean correctos
+// Bloque 3: Guardar alquiler
+si los datos son correctos
+guardar alquiler en la base de datos
+enviar respuesta de éxito al cliente
 
-Si los datos son incorrectos
-    Envía mensaje de error al cliente
-
-Si los datos son correctos
-    Guarda la operación en la base de datos
-    Envía confirmación de éxito al cliente
+Fin del sistema

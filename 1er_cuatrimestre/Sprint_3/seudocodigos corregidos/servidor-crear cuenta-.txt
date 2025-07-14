@@ -1,53 +1,23 @@
-Inicio del sistema
+Inicio del servidor
 
-// Bloque 1: Preguntar si tiene cuenta
-se pregunta al usuario si tiene una cuenta
+// Bloque 1
+si recibe datos de nuevo usuario
+    validar datos y guardar en base de datos (si son válidos)
 
-// Bloque 2: Solicitar datos para crear cuenta
-Si el usuario responde que no
-    Se le manda a que cree una cuenta nueva ingresando:
-        - Nombre
-        - Correo electrónico
-        - Contraseña
-        - Teléfono
-        - Fecha de nacimiento
-        - sexo
+// Bloque 2
+generar código de verificación
+enviar código al correo proporcionado
+activar temporizador de expiración del código
 
-    enviar los datos al servidor
+// Bloque 3
+si el cliente envía un código de verificación
+    verificar que el código sea válido y no haya expirado
 
-// Bloque 3: Esperar validación inicial del servidor (datos válidos o no)
-esperar validacion de los datos del servidor
+    si es correcto
+        activar la cuenta y enviar mensaje de éxito
 
-si los datos devueltos son inválidos
-    se le pedira que lo vuelva a intentar (volver a Bloque 2)
-
-si los datos son válidos
-    continuar al siguiente bloque
-
-// Bloque 4: Esperar respuesta si la cuenta ya existe
-esperar respuesta del servidor si existe la cuenta
-
-si la cuenta ya existe
-    se mostrará un mensaje indicando que esa cuenta ya existe
-    se le pedirá crear con otros datos o iniciar sesión
-
-si la cuenta no existe
-    continuar al siguiente bloque
-
-// Bloque 5: Esperar código de verificación
-esperar respuesta del servidor con código de verificación
-
-si se recibe el código de verificación
-    mostrar mensaje para ingresar el código
-    activar cronómetro de expiración
-
-// Bloque 6: Validar código de verificación
-Si el código es ingresado antes de que expire
-    muestra un mensaje indicando que fue creada con éxito
-    redirigir al inicio
-
-si el código no es ingresado en tiempo
-    mostrar un mensaje indicando que ya expiró
-    solicitar nuevo código (volver a Bloque 5)
+    si el código expiró
+        generar y enviar un nuevo código
+        indicar al cliente que vuelva a intentarlo
 
 Fin del sistema

@@ -1,11 +1,14 @@
-Inicio de Sistema
+Inicio del servidor
 
-Recibe nombre y contraseña enviados por el cliente
+// Bloque 1: Recibir datos login
+si recibe datos de login (nombre y contraseña)
+    validar los datos en la base de datos
 
-Verifica si los datos son correctos
+// Bloque 2: Enviar respuesta
+    si los datos son correctos
+        enviar respuesta de éxito al cliente
 
-Si los datos no son correctos
-    Envía mensaje al cliente: "Datos incorrectos"
+    si los datos son incorrectos
+        enviar mensaje de error al cliente
 
-Si los datos son correctos
-    Envía mensaje al cliente: "Acceso concedido"
+Fin del sistema
